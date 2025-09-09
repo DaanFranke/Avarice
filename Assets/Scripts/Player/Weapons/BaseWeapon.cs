@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class BaseWeapon : MonoBehaviour
+public abstract class BaseWeapon : MonoBehaviour
 {
     public WeaponStats weaponStats;
     public bool outOfStamina;
