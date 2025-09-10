@@ -20,16 +20,18 @@ public class PlayerMovement : MonoBehaviour
     private bool isCrouching = false;
     public bool isSprinting = false;
 
-    public float gravityModifier;
-    public float accelIncrease;
-    private float accelSpeed = 1.0f;
-
     //Stamina costs and references
     private PlayerResources rescourcesReference;
     private bool outOfStamina;
 
     public float sprintStaminaDrain;
     public float jumpStaminaDrain;
+
+    //Gravity vars
+    public float gravityStrength;
+
+    public float accelIncrease;
+    private float accelSpeed = 1.0f;
 
     private void Awake()
     {
@@ -139,10 +141,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Gravity() 
-    {        
+    {       
         if (grounded == false) 
         {
-            rb.AddForce(Vector3.down * gravityModifier * accelSpeed, ForceMode.Force);
+            rb.AddForce(Vector3.down * gravityStrength * accelSpeed, ForceMode.Acceleration);
             accelSpeed += accelIncrease;
         }
         
