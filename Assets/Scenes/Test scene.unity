@@ -1705,6 +1705,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1357146695794300658, guid: 085ec41f108c8fe468293f9b03d36d0c, type: 3}
+      propertyPath: viewAngle
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357146695794300658, guid: 085ec41f108c8fe468293f9b03d36d0c, type: 3}
+      propertyPath: viewRadius
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3918643699318511040, guid: 085ec41f108c8fe468293f9b03d36d0c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.28688928
